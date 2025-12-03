@@ -1,0 +1,25 @@
+﻿namespace Variabler
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            bool resultat1 = SjekkTretti(30, 5);
+            bool resultat2 = SjekkTretti(10, 20);
+            bool resultat3 = SjekkTretti(12, 7);
+
+            Console.WriteLine(resultat1);
+            Console.WriteLine(resultat2);
+            Console.WriteLine(resultat3);
+        }
+
+        static bool SjekkTretti(int a, int b)
+        {
+            if (a == 30 || b == 30 || (a + b) == 30)
+            {
+                return true;
+            }
+            return false;
+        }
+    }
+}
